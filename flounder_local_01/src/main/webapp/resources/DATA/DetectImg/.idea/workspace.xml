@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4aac4c7-4dbe-4069-9393-b1b6d74502e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../../flounder_V02/src/main/webapp/WEB-INF/views/board/53_detect_reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../flounder_V02/src/main/webapp/WEB-INF/views/board/53_detect_reg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../java/kr/kvgs/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../java/kr/kvgs/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEB-INF/views/board/03_detect.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEB-INF/views/board/03_detect.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../WEB-INF/views/board/53_detect_reg.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../WEB-INF/views/board/53_detect_reg.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../org_AMA2221001_04_JPG.rf.6156b8311d2bab69ba6d7d350f695b12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../org_AMA2221009_07_JPG.rf.007887ad26b4c2264e70278ef7aa632f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../org_AMA2221019_02_JPG.rf.10078aa2d64d346f04e32ec25090b38c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../org_ASP2221004_14_JPG.rf.f06c7ac047e889a5f99310345c3f9da5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pred_AMA2221001_04_JPG.rf.6156b8311d2bab69ba6d7d350f695b12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pred_AMA2221009_07_JPG.rf.007887ad26b4c2264e70278ef7aa632f.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pred_AMA2221019_02_JPG.rf.10078aa2d64d346f04e32ec25090b38c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pred_ASP2221004_14_JPG.rf.f06c7ac047e889a5f99310345c3f9da5.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QzZD210dgET0TSZM5O3lfeIP53" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/TeamGit/flounder_main/flounder_V02/src/main/webapp"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Flound_Srv_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DetectImg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flound_Srv_01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Flound_Srv_01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4aac4c7-4dbe-4069-9393-b1b6d74502e4" name="Changes" comment="" />
+      <created>1686358247055</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686358247055</updated>
+    </task>
+    <servers />
+  </component>
+</project>

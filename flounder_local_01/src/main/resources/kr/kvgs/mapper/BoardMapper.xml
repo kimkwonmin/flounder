@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="kr.kvgs.mapper.BoardMapper">
+
+	<select id="getCommunity" resultType="kr.kvgs.entity.Community">
+
+		select c.c_id c_id, c.title title, c.c_date c_date, m.m_name m_name,
+		c.img_path img_path, c.c_text c_text, c.w_email w_email
+		from community c, member m
+		where c.w_email = m.m_email
+		order by c.c_date desc
+
+	</select>
+
+	<select id="getHistory" resultType="kr.kvgs.entity.DetectDis"
+		parameterType="kr.kvgs.entity.Member">
+		select d.dd_id dd_id, d.org_img org_img, d.dt_img dt_img, d.dd_email
+		dd_email,
+		d.dd_date dd_date, d.dd_comment dd_comment, m.m_name m_name
+		from detect_dis d, member m
+		where d.dd_email = m.m_email
+		and d.dd_email = #{m_email}
+		order by d.dd_date desc
+
+	</select>
+
+
+	<delete id="history_remove" parameterType="int">
+		delete from detect_dis
+		where dd_id = #{dd_id}
+	</delete>
+
+
+
+	<select id="getSearch" resultType="kr.kvgs.entity.Dis_search"
+		parameterType="String">
+		select * from dis_search where ds_name like CONCAT('%',
+		#{str_search}, '%') order by ds_name
+	</select>
+
+	<insert id="dd_insert" parameterType="kr.kvgs.entity.DetectDis">
+		insert into detect_dis (dd_email, org_img, dt_img, dd_comment) values
+		(#{dd_email}, #{org_img}, #{dt_img}, #{dd_comment})
+	</insert>
+
+	<select id="getDsDetail" resultType="String" parameterType="int">
+		select ds_url from dis_search where ds_id = #{ds_id}
+	</select>
+
+	<select id="getShareDetail"
+		resultType="kr.kvgs.entity.ShareDetail" parameterType="int">
+		select c.c_id c_id, c.title title, c.c_date c_date, m.m_name m_name,
+		c.img_path img_path, c.c_text c_text, c.w_email w_email
+		from community c, member m
+		where c.w_email = m.m_email and c.c_id = #{c_id}
+	</select>
+
+	<select id="getHistoryDetail"
+		resultType="kr.kvgs.entity.HistoryDetail" parameterType="int">
+		select d.dd_id
+		dd_id, d.org_img org_img, d.dt_img dt_img, d.dd_email dd_email,
+		d.dd_date dd_date, d.dd_comment dd_comment, m.m_name m_name
+		from detect_dis d, member m
+		where d.dd_email = m.m_email
+		and d.dd_id = #{dd_id}
+
+	</select>
+
+	<delete id="remove" parameterType="int">
+		delete from community where
+		c_id = #{c_id}
+	</delete>
+
+	<update id="modify" parameterType="kr.kvgs.entity.Community">
+		update community set title=
+		#{title}, c_text= #{c_text}, img_path = #{img_path}
+		where c_id = #{c_id}
+	</update>
+
+	<select id="get" resultType="kr.kvgs.entity.Community"
+		parameterType="int">
+		select * from community where c_id=#{c_id}
+	</select>
+
+	<insert id="comm_write" parameterType="kr.kvgs.entity.Community">
+		insert into community
+		(w_email, img_path, title, c_text) values (#{w_email}, #{img_path},
+		#{title}, #{c_text})
+	</insert>
+
+	<insert id="reply_insert" parameterType="kr.kvgs.entity.Reply">
+		insert into reply (c_id,
+		r_email, reply) values (#{c_id}, #{r_email}, #{reply})
+	</insert>
+
+	<select id="getReply" parameterType="int"
+		resultType="kr.kvgs.entity.Reply">
+		select r.r_id r_id, r.c_id c_id, r.r_email r_email,
+		r.r_date r_date, r.reply reply, m.m_name r_name
+		from reply r , member m
+		where r.c_id=#{c_id} and m.m_email = r.r_email
+		order by r.r_date desc
+	</select>
+
+
+</mapper>
